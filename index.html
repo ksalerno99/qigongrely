@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#2d1749">
   <meta
     name="description"
-    content="Explore remote Qi Gong energy sessions with Aureliana, inspired by Fa Qi and offered as a complementary wellness practice."
+    content="Explore remote Qi Gong energy sessions with Aureliana, inspired by Fa Qi and offered as an enhanced wellness practice."
   >
   <title>Aureliana | Remote Qi Gong Energy</title>
 
@@ -260,6 +260,67 @@
       font-size: .95rem;
     }
 
+    .pricing {
+      padding: 5rem 1.25rem;
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .pricing-inner {
+      width: min(850px, 100%);
+      margin: 0 auto;
+    }
+
+    .pricing .eyebrow {
+      color: var(--violet);
+    }
+
+    .pricing-intro {
+      max-width: 620px;
+      margin: 0 auto 2.25rem;
+      color: var(--muted);
+    }
+
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      text-align: left;
+    }
+
+    .price-card {
+      position: relative;
+      padding: 2rem;
+      border: 1px solid rgba(91, 59, 111, .16);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 12px 35px rgba(75, 43, 91, .07);
+    }
+
+    .price-card.featured {
+      border-color: var(--gold);
+      background: linear-gradient(145deg, #fff, #fbf5fc);
+    }
+
+    .price-card h3 {
+      margin: 0;
+      color: var(--plum);
+      font-size: 1.35rem;
+      font-weight: 400;
+    }
+
+    .price {
+      margin: .5rem 0;
+      color: var(--plum);
+      font: 400 2.8rem/1.2 Georgia, serif;
+    }
+
+    .first-session-note {
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
     .contact {
       text-align: center;
     }
@@ -278,6 +339,20 @@
       margin: .6rem 0 1.5rem;
       color: var(--plum);
       font-size: 1.35rem;
+    }
+
+    .payment-options {
+      margin: 1.5rem auto;
+      color: var(--muted);
+    }
+
+    .payment-options p {
+      margin: .35rem 0;
+    }
+
+    .payment-options strong {
+      color: var(--plum);
+      font-weight: 600;
     }
 
     .note {
@@ -324,6 +399,12 @@
       .practice-inner {
         padding-top: 4rem;
         padding-bottom: 4rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .pricing-cards {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -399,7 +480,7 @@
             <div class="card-details">
               <p>
                 Make time to pause, reconnect with your sense of vitality, and
-                welcome a fresh perspective through a gentle energy session.
+                welcome a higher frequency through a gentle energy session.
               </p>
               <p>
                 Aureliana will explain how she approaches the session before it
@@ -421,7 +502,7 @@
                 practice.
               </p>
               <p>
-                People’s experiences vary. This is a complementary wellness
+                People’s experiences vary. This is an enhanced wellness
                 practice, not a medical treatment or a substitute for care from
                 a health professional.
               </p>
@@ -449,21 +530,57 @@
       </div>
     </section>
 
+    <section class="pricing" aria-labelledby="pricing-title">
+      <div class="pricing-inner fade-in">
+        <p class="eyebrow">Simple, transparent pricing</p>
+        <h2 id="pricing-title">Session rates</h2>
+        <p class="pricing-intro">
+          Book a remote Qi Gong energy session with Aureliana on Zoom.
+        </p>
+
+        <div class="pricing-cards">
+          <article class="price-card">
+            <h3>30-minute session</h3>
+            <p class="price">$55</p>
+          </article>
+
+          <article class="price-card featured">
+            <h3>60-minute session</h3>
+            <p class="price">$100</p>
+          </article>
+        </div>
+
+        <p class="first-session-note">
+          New to sessions with Aureliana? Start with a complimentary 15-minute
+          introductory Zoom session.
+        </p>
+      </div>
+    </section>
+
     <section class="section contact fade-in" id="contact" aria-labelledby="contact-title">
       <p class="eyebrow" style="color: var(--violet)">Your space, your pace</p>
       <h2 id="contact-title">Connect with Aureliana</h2>
       <p>
-        Text Aureliana to ask about remote sessions, availability, or what to expect.
+        Text Aureliana to book a 30-minute or 60-minute Zoom session, or to ask
+        about the complimentary 15-minute introductory session.
       </p>
       <p class="phone">+1-212-380-6800</p>
+
+      <div class="payment-options">
+        <p><strong>Payment options</strong></p>
+        <p>Zelle: +1-212-380-6800</p>
+        <p>Venmo: @salernoaureliana</p>
+      </div>
+
       <a
         class="button"
-        href="sms:+12123806800?body=Hi%20Aureliana%2C%20I%E2%80%99m%20interested%20in%20a%20remote%20Qi%20Gong%20energy%20session."
+        href="sms:+12123806800?body=Hi%20Aureliana%2C%20I%E2%80%99d%20like%20to%20book%20a%20Zoom%20session."
       >
-        Text Aureliana about a session
+        Text Aureliana to book
       </a>
+
       <p class="note">
-        Remote Qi Gong energy sessions are offered as a complementary wellness
+        Remote Qi Gong energy sessions are offered as an enhanced wellness
         practice and are not a substitute for medical care, diagnosis, or
         treatment.
       </p>
